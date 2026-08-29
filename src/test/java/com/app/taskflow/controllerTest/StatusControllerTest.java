@@ -22,6 +22,6 @@ class StatusControllerTest {
 
         mockMvc.perform(get("/status/test-get-status"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Application is stopped"));
+                .andExpect(content().string("Application is running"));
     }
 }
